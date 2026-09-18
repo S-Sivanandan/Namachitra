@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Namachitra</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&family=Cinzel:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #2C1A0E;
+      --ink-mid: #4A2E1A;
+      --parchment: #FAF7F2;
+      --parchment-warm: #F5EFE4;
+      --parchment-deep: #EDE3D0;
+      --gold: #B8860B;
+      --gold-light: #D4A017;
+      --gold-bright: #C9940E;
+      --sepia: #6B4C2A;
+      --cream-card: #FDFAF5;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: 'DM Sans', sans-serif;
+      background: var(--parchment);
+      color: var(--ink);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3CfeComponentTransfer%3E%3CfeFuncA type='table' tableValues='0 0.035'/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.5'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    .page-shell {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      height: 72px;
+      background: var(--ink);
+      border-bottom: 1px solid rgba(184,134,11,0.25);
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    .nav-logo-mark {
+      width: 36px;
+      height: 36px;
+      background: var(--gold);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', serif;
+      font-size: 16px;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .nav-logo-text {
+      font-family: 'Cinzel', serif;
+      font-size: 15px;
+      color: #FAF7F2;
+      letter-spacing: 0.08em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      font-size: 13px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(250,247,242,0.7);
+      text-decoration: none;
+      transition: color 0.3s;
+      font-weight: 300;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .privacy-wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 72px 20px 100px;
+    }
+
+    .privacy-card {
+      background: rgba(255,255,255,0.26);
+      border: 1px solid rgba(107,76,42,0.12);
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(44,26,14,0.08);
+      padding: 48px 32px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .privacy-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(184,134,11,0.08), transparent 70%);
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(42px, 5vw, 72px);
+      line-height: 1.05;
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    .date-row {
+      color: var(--sepia);
+      font-size: 14px;
+      margin-bottom: 32px;
+      opacity: 0.8;
+    }
+
+    .policy-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .policy-content p,
+    .policy-content li {
+      font-size: 15px;
+      line-height: 1.8;
+      color: var(--ink-mid);
+    }
+
+    .policy-content h2 {
+      margin-top: 36px;
+      margin-bottom: 14px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(26px, 3vw, 38px);
+      color: var(--ink);
+      font-weight: 400;
+    }
+
+    .policy-content h3 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: var(--ink);
+    }
+
+    .policy-content ul {
+      padding-left: 22px;
+      margin: 14px 0;
+    }
+
+    .back-home {
+      display: inline-flex;
+      margin-top: 36px;
+      align-items: center;
+      gap: 8px;
+      background: var(--ink);
+      color: var(--gold-light);
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 14px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+    }
+
+    .back-home:hover {
+      background: var(--gold);
+      color: var(--ink);
+    }
+
+    @media (max-width: 640px) {
+      nav {
+        padding: 0 18px;
+      }
+
+      .nav-links {
+        gap: 12px;
+      }
+
+      .nav-links a {
+        font-size: 10px;
+        letter-spacing: 0.08em;
+      }
+
+      .privacy-card {
+        padding: 32px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page-shell">
+    <nav>
+      <a href="namachitra.html" class="nav-logo" aria-label="Namachitra home">
+        <span class="nav-logo-mark">N</span>
+        <span class="nav-logo-text">NAMACHITRA</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="namachitra.html">Home</a></li>
+        <li><a href="namachitra.html#about">About</a></li>
+        <li><a href="namachitra.html#portfolio">Portfolio</a></li>
+        <li><a href="namachitra.html#process">Process</a></li>
+        <li><a href="namachitra.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="privacy-wrap">
+      <article class="privacy-card">
+        <div class="eyebrow">Namachitra</div>
+        <h1>Privacy Policy</h1>
+        <div class="date-row">
+          <strong>Effective Date:</strong> September 18, 2026<br />
+          <strong>Last Updated:</strong> September 18, 2026
+        </div>
+
+        <div class="policy-content">
+          <p>At Namachitra (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), we craft bespoke, hand-inked portraits and visual narratives. Because our art relies on personal storytelling, milestones, and family histories, we treat the privacy and confidentiality of your information with the highest level of care.</p>
+
+          <h2>1. Information We Collect</h2>
+          <p>To create personalized art and fulfill commissions, we collect information you provide directly to us:</p>
+          <ul>
+            <li><strong>Contact &amp; Identification Details:</strong> Name, email address, phone number, shipping address, and billing details.</li>
+            <li><strong>Story &amp; Narrative Content (Discovery Data):</strong> Personal milestones, family histories, relationship details, values, personal motifs, photographs, and aesthetic preferences submitted through our Discovery Form, consultation calls, or email exchanges.</li>
+            <li><strong>Corporate Client Data:</strong> Recipient names, milestone notes, and delivery preferences provided for corporate gifting sets.</li>
+            <li><strong>Technical &amp; Usage Data:</strong> Basic web traffic data, cookies, and browser identifiers collected automatically when you visit our website.</li>
+          </ul>
+
+          <h2>2. How We Use Your Information</h2>
+          <p>We use your data solely for the following purposes:</p>
+          <ul>
+            <li><strong>Artistic Creation &amp; Curation:</strong> Interpreting your narrative to sketch, compose, and ink your commissioned portrait.</li>
+            <li><strong>Order Fulfillment &amp; Shipping:</strong> Framing, packaging, and delivering your artwork.</li>
+            <li><strong>Client Communication:</strong> Conducting curation calls, sharing preview sketches for revisions, and sending delivery updates.</li>
+            <li><strong>Customer Support:</strong> Addressing inquiries, feedback, and post-delivery assistance.</li>
+          </ul>
+
+          <h2>3. Confidentiality of Personal Stories</h2>
+          <h3>100% Confidential Narrative</h3>
+          <p>The intimate stories, personal reflections, and sensitive memories shared during your Discovery Form or Curation Call remain strictly confidential between you and the studio artists.</p>
+
+          <h3>Portfolio &amp; Display Consent</h3>
+          <p>We never showcase your finished portrait, specific personal name narrative, or identifiable story in our public portfolio, social media, or marketing materials without your explicit, prior written permission.</p>
+
+          <h2>4. Sharing &amp; Disclosure of Information</h2>
+          <p>We do not sell, rent, or trade your personal information. We only share information with third parties in the following limited situations:</p>
+          <ul>
+            <li><strong>Service Providers:</strong> Trusted third-party vendors assisting in essential operations, such as secure payment processors, logistics/shipping couriers, and website hosting services.</li>
+            <li><strong>Legal Requirements:</strong> When required by law, subpoena, or legal process to protect our rights, safety, or property.</li>
+          </ul>
+
+          <h2>5. Data Retention &amp; Security</h2>
+          <ul>
+            <li><strong>Storage:</strong> Discovery submissions and reference materials are retained only as long as necessary to complete your commission, accommodate revision rounds, and satisfy basic tax/accounting requirements.</li>
+            <li><strong>Security:</strong> We employ standard physical and electronic security safeguards to protect your personal information against unauthorized access, loss, or misuse.</li>
+          </ul>
+
+          <h2>6. Your Rights</h2>
+          <p>Depending on your jurisdiction, you have the right to:</p>
+          <ul>
+            <li>Request access to the personal data we hold about you.</li>
+            <li>Request the correction or update of inaccurate information.</li>
+            <li>Request the deletion of your personal stories, notes, or uploaded reference photos once your order is fulfilled.</li>
+            <li>Withdraw consent for any portfolio or promotional showcase of your artwork at any time.</li>
+          </ul>
+
+          <h2>7. Contact Us</h2>
+          <p>If you have questions, requests, or concerns regarding this Privacy Policy or your personal information, contact us via the studio inquiry form on our website or by email at:</p>
+          <p><strong>Studio:</strong> Namachitra<br />
+          <strong>Contact:</strong> Namachitra Inquiry</p>
+        </div>
+
+        <a href="namachitra.html" class="back-home">← Back to Home</a>
+      </article>
+    </main>
+  </div>
+</body>
+</html>

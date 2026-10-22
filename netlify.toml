@@ -1,0 +1,12 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/namachitra.html"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/namachitra"
+  to = "/"
+  status = 301

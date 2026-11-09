@@ -22,7 +22,8 @@ window.matchMedia('(min-width: 768px)').addEventListener('change', event => {
   if (event.matches) closeMenu();
 });
 document.querySelectorAll('[data-dialog]').forEach(button => {
-  button.addEventListener('click', () => {
+  button.addEventListener('click', event => {
+    event.preventDefault();
     const dialog = document.getElementById(button.dataset.dialog);
     dialog.showModal();
     document.body.style.overflow = 'hidden';
